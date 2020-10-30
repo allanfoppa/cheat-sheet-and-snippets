@@ -1,0 +1,1 @@
+# '+' matches one or more consecutive characters
