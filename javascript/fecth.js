@@ -15,15 +15,19 @@ fetch('https://pokeapi.co/api/v2/pokemon/squirtle')
   })
 
 // POST REQUEST
-
 url = 'localhost:3000/post-example'
+
+data = {
+  "foo": "bar",
+  "lorem": "ipsum"
+}
 
 fetch(url, {
   method: 'post',
   headers: {
     "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
   },
-  body: 'foo=bar&lorem=ipsum'
+  body: data
 })
   .then(json)
   .then((data) => {
