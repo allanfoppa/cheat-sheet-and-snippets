@@ -4,7 +4,7 @@
 function openChrome(){
 
     urls=(
-        "https://f1solucoes.acelerato.com/quadros/demandas/292"
+        "https://www.freecodecamp.org/"
     )
 
     for url in "${urls[@]}"; do
@@ -23,7 +23,7 @@ function openChromeAnonymous(){
         "https://www.freecodecamp.org/"
     )
 
-    for url in "${urls[@]}"; do 
+    for url in "${urls[@]}"; do
         google-chrome --incognito -new-tab $url &
         sleep 5
     done
