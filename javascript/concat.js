@@ -1,2 +1,3 @@
-const str = 'Olá '
-str.concat('Mundo')
+const hello = 'Olá '
+const world = 'World!'
+const concat = hello.concat(world)
