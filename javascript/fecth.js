@@ -39,10 +39,9 @@ fetch(url, {
 
 // Promise.all
 
-function fetchJson(url) {
-  return fetch(url).then((response) => {
-    return response.json()
-  })
+async function fetchJson(url) {
+  const response = await fetch(url)
+  return await response.json()
 }
 
 function fetchAll() {
