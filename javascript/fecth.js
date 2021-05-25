@@ -36,3 +36,19 @@ fetch(url, {
   .catch((error) => {
     console.log('Request failed', error)
   })
+
+// Promise.all
+
+async function fetchJson(url) {
+  const response = await fetch(url)
+  return await response.json()
+}
+
+function fetchAll() {
+  Promise.all([
+    fetchJson("http://locahost:3000/employees"),
+    fetchJson("http://locahost:3000/roles")
+  ]).then(([employees, roles]) => {
+    console.log(employees, roles)
+  })
+}
