@@ -36,3 +36,20 @@ fetch(url, {
   .catch((error) => {
     console.log('Request failed', error)
   })
+
+// Promise.all
+
+function fetchJson(url) {
+  return fetch(url).then((response) => {
+    return response.json()
+  })
+}
+
+function fetchAll() {
+  Promise.all([
+    fetchJson("http://locahost:3000/employees"),
+    fetchJson("http://locahost:3000/roles")
+  ]).then(([employees, roles]) => {
+    console.log(employees, roles)
+  })
+}
