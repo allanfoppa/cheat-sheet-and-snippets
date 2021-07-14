@@ -5,11 +5,11 @@ import (
 )
 
 func main() {
-	x := 151 // INT
-	y := "Mew" // STRING
-	z := true // BOOL
+	number := 151 // INT
+	name := "Mew" // STRING
+	cool := true // BOOL
 
-	fmt.Println(x)
-	fmt.Println(y)
-	fmt.Println(z)
+	fmt.Println(number)
+	fmt.Println(name)
+	fmt.Println(cool)
 }
